@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OfertaDigital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'app/css/estilos.css' %}">
+    
+</head>
+<body>
+
+    
+    <header id="header">
+        <img class="menu" src="{% static 'app/img/menuiconwhite.png' %}" alt="menu" id="menu">
+        <div class="contenedor_logo">
+            <img  class="logo"  src="{% static 'app/img/ofertaiconopng.png' %}" alt="logo">
+        </div>
+
+        <div>
+            
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <a href="inicio.html"> Inicio </a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                    <li><a href="galeria.html">Galería</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <div id="contenido">
+
+            <div class="slider">
+                <div>
+                    <img src="{% static 'app/img/banner/Tarjetas.png' %}" alt="">
+                </div>
+                
+            </div>
+
+        <h2>Productos</h2>
+        <div class="productos">
+
+            <div class="producto">
+
+                <div class="contenedor_producto">
+
+                    <img src="{% static 'app/img/Repetidor Wifi.jpg' %}" alt="imagen producto">
+                    <div class="detalle">
+                        <h5>Repetidor</h5>
+                        <h2>Wifi</h2>
+                        <h3>$18.000</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="producto">
+
+                <div class="contenedor_producto">
+
+                    <img src="{% static 'app/img/Pendrive.jpg' %}" alt="imagen producto">
+                    <div class="detalle">
+                        <h5>Memoria Usb</h5>
+                        <h2>Pendrive</h2>
+                        <h3>$14.50</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="producto">
+
+                <div class="contenedor_producto">
+
+                    <img src="{% static 'app/img/Dell_i56taG.jpg' %}" alt="imagen producto">
+                    <div class="detalle">
+                        <h5>Laptop</h5>
+                        <h2>Dell</h2>
+                        <h3>$475.00</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="producto">
+
+                <div class="contenedor_producto">
+
+                    <img src="{% static 'app/img/USB HUB.jpg' %}" alt="imagen producto">
+                    <div class="detalle">
+                        <h5>Usb</h5>
+                        <h2>Hub</h2>
+                        <h3>$7.00</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="producto">
+
+                <div class="contenedor_producto">
+
+                    <img src="{% static 'app/img/Enclosure 2.5.jpg' %}" alt="imagen producto">
+                    <div class="detalle">
+                        <h5>Enclouser</h5>
+                        <h2>Case</h2>
+                        <h3>$11.00</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        <div class="marcas">
+            <img src="{% static 'app/img/footer/apple.png' %}" alt="apple">
+            <img src="{% static 'app/img/footer/lenovo.png' %}" alt="lenovo">
+            <img src="{% static 'app/img/footer/microsoft.png' %}" alt="microsoft">
+            <img src="{% static 'app/img/footer/samsung.png' %}" alt="samsung">
+            <img src="{% static 'app/img/footer/xiaomi.png' %}" alt="xiaomi">
+        </div>
+        <div class="logo_footer">
+            <img src="{% static 'app/img/ofertaiconopng.png' %}" alt="logo">
+        </div>
+    </footer>
+
+    <script src="{% static 'app/https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' %}"></script>
+    <script src="{% static 'app/https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js' %}"></script>
+    <script src="{% static 'app/js/menu.js' %}"></script>
+
+    <script>
+        $(document).ready(function() {
+          $('.slider').bxSlider({
+              mode: 'fade',//horizontal, vertical, fade
+              auto: true,
+              pause: 2000
+          });
+        });
+    </script>
+
+</body>
+</html>
